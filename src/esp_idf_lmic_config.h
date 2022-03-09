@@ -32,17 +32,18 @@
 #elif defined(CONFIG_TTN_LORA_FREQ_IN_866)
 #define CFG_in866 1
 #else
-#define TTN_IS_DISABLED 1
+// #define TTN_IS_DISABLED 1
 #define CFG_eu868 1
 #endif
 
-#if defined(CONFIG_TTN_RADIO_SX1272_73)
-#define CFG_sx1272_radio 1
-#elif defined(CONFIG_TTN_RADIO_SX1276_77_78_79)
 #define CFG_sx1276_radio 1
-#else
-#error TTN LoRa radio chip must be configured using 'make menuconfig'
-#endif
+// #if defined(CONFIG_TTN_RADIO_SX1272_73)
+// #define CFG_sx1272_radio 1
+// #elif defined(CONFIG_TTN_RADIO_SX1276_77_78_79)
+// #define CFG_sx1276_radio 1
+// #else
+// #error TTN LoRa radio chip must be configured using 'make menuconfig'
+// #endif
 
 #if !defined(CONFIG_TTN_PROVISION_UART_NONE)
 #define TTN_HAS_AT_COMMANDS 1
