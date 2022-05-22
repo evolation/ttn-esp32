@@ -18,6 +18,7 @@
 #define _THETHINGSNETWORK_H_
 
 #include "ttn.h"
+#include "ttn_nvs.h"
 
 /**
  * @brief Integer data type for specified the port of an uplink or downlink message.
